@@ -1,3 +1,5 @@
+// TrafficLight.cpp
+// This file contains the implementation of the TrafficLight class, which is responsible for controlling a traffic
 
 const int RED = 13;
 const int YELLOW = 12;
