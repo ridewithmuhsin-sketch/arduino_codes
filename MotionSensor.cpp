@@ -12,3 +12,8 @@ void MotionSensor::readMotionData() {
     // Code to read motion data from the sensor
     // Process the data and determine if motion is detected
 }
+
+void MotionSensor::handleMotionDetected() {
+    // Code to handle the event when motion is detected
+    // This could involve triggering an alarm, sending a notification, etc.
+}
