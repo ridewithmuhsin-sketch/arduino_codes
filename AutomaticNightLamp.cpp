@@ -23,3 +23,34 @@ void loop() {
     Serial.print("Brightness=");
     Serial.println(brightness);
 }
+
+
+//
+
+
+const int ldrPin = A0;
+const int ledPin = 9;
+
+void setup() {
+  pinMode(ldrPin, INPUT);
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int lightLevel = analogRead(ldrPin);
+
+  Serial.print("Light Level = ");
+  Serial.println(lightLevel);
+
+  if (lightLevel < 300) {
+    // Dark
+    digitalWrite(ledPin, HIGH);
+  } 
+  else {
+    // Bright
+    digitalWrite(ledPin, LOW);
+  }
+
+  delay(100);
+}
